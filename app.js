@@ -181,6 +181,8 @@ function loadErrorHandling(app, config, callback) {
 	app.server.listen(config.port, error => {
 		const address = app.server.address();
 		app.address = `http://${address.address}:${address.port}`;
+		console.log('@@@@@@@');
+		console.log(app.address);
 		callback(error, app);
 	});
 }

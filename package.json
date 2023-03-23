@@ -50,6 +50,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "start-docker": "NODE_ENV=development node index.js",
     "test": "make ci"
   }
 }
