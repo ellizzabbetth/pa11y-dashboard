@@ -20,11 +20,11 @@ services:
     # ports: <host_port>: <container_port> ex 3000:80
     # ports: <host/expose_port>: <container/internal/node_app.listen()_port> ex 3000:80
     ports:
-      - '80:4000'
+      - '80:3000'
     volumes: 
       #- logs:/app/logs
       - .:/app
-      - /node_modules
+      - /app/node_modules
     env_file: 
       - ./env/backend.env
     depends_on:

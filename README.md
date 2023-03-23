@@ -206,3 +206,38 @@ Copyright &copy; 2013–2020, Team Pa11y and contributors
 [shield-node]: https://img.shields.io/node/v/pa11y/pa11y-dashboard.svg
 [shield-build]: https://img.shields.io/travis/pa11y/pa11y-dashboard/master.svg
 [shield-license]: https://img.shields.io/badge/license-GPL%203.0-blue.svg
+
+
+Resources:
+https://una.im/pa11y-dash/
+https://medium.com/@menidhikjha/setting-up-pa11y-dashboard-988f61e2154
+
+TODO
+1. 
+2. mongodb
+
+3. nodemon
+
+4. 
+"scripts": {
+    "start": "SET NODE_ENV=development & nodemon app/app.js",
+  }
+docker-compose
+5. multi-stage docker-compose
+
+
+Initial Dockerfile
+
+# FROM node:12.18.1
+# WORKDIR /app
+# COPY ["package.json","./"]
+# RUN npm install
+# COPY . .
+# EXPOSE 4000
+# CMD ["npm", "start"]
+
+docker-compose logs mongodb -f  
+ docker-compose logs backend -f  
+
+docker-compose up --build
+localhost:3000

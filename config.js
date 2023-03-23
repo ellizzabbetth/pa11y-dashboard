@@ -20,10 +20,12 @@ const jsonPath = `./config/${environment}.json`;
 const jsPath = `./config/${environment}.js`;
 
 if (fs.existsSync(jsonPath)) {
+	console.log(`./config/${environment}.json`);
 	module.exports = require(jsonPath);
 } else if (fs.existsSync(jsPath)) {
 	module.exports = require(jsPath);
 } else {
+	console.log('elee config');
 	module.exports = {
 		port: Number(env('PORT', '4000')),
 		noindex: env('NOINDEX', 'true') === 'true',
