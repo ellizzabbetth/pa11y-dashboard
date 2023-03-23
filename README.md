@@ -241,3 +241,7 @@ docker-compose logs mongodb -f
 
 docker-compose up --build
 localhost:3000
+
+WORKS
+- docker-compose up -build -d
+- node index.js
